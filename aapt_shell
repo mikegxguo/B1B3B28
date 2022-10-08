@@ -1,0 +1,4 @@
+../../../out/host/linux-x86/bin/aapt a ../../../out/target/product/gemini/system/priv-app/B1B3B28/B1B3B28.apk lib/arm64-v8a/libqlmodem.so
+#../../../out/host/linux-x86/bin/aapt a ../../../out/target/product/gemini/system/priv-app/B1B3B28/B1B3B28.apk lib/arm64-v8a/libnative-lib.so
+cp ../../../out/target/product/gemini/system/priv-app/B1B3B28/B1B3B28.apk ~/mike/share/
+cd ../../../

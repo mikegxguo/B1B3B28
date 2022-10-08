@@ -1,0 +1,32 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/label_gsm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gsm_preface" />
+
+    <Button
+        android:id="@+id/enable_gsm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_below="@+id/label_gsm"
+        android:clickable="true"
+        android:onClick="onEnableGsm"
+        android:text="@string/enable_gsm" />
+
+    <Button
+        android:id="@+id/disable_gsm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_below="@+id/enable_gsm"
+        android:clickable="true"
+        android:onClick="onDisableGsm"
+        android:text="@string/disable_gsm" />
+
+</RelativeLayout>

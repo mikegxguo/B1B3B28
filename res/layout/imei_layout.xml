@@ -1,0 +1,62 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/label_imei"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/imei_preface" />
+
+    <Button
+        android:id="@+id/read_imei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_below="@+id/label_imei"
+        android:clickable="true"
+        android:onClick="onReadIMEI"
+        android:text="@string/read_imei" />
+
+    <EditText
+        android:id="@+id/edit_sn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/read_imei"
+        android:layout_marginRight="20dip"
+        android:background="@android:drawable/editbox_background"
+        android:minWidth="200dip"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/change_imei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_below="@+id/edit_sn"
+        android:clickable="true"
+        android:onClick="onChangeIMEI"
+        android:text="@string/change_imei" />
+
+    <TextView
+        android:id="@+id/label_response"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_imei"
+        android:text="@string/ril_oem_response" />
+
+    <EditText
+        android:id="@+id/edit_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_response"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="#000000"
+        android:editable="false"
+        android:minHeight="50dip"
+        android:minWidth="200dip"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

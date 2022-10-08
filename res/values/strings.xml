@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   <string name="hello">Hello World, IMEI Activity!</string>
+    <string name="app_name">IMEI</string>
+
+    <string name="ril_oem_response">Module response:</string>
+
+    <string name="testing_imei">IMEI</string>
+    <string name="imei_preface">Check points:\n1. Offical TAC number is 35007510\n2. This is only supported in Gemini project\n</string>
+    <string name="read_imei">Read IMEI</string>
+    <string name="change_imei">Change IMEI</string>
+
+    <string name="control_gsm">Control GSM For SC600Y EM SKU</string>
+    <string name="gsm_preface">Check points:\n1. Only EM SKU supports GSM function\n2. If GSM is enabled, it can be disabled. Vice versa.\n</string>
+    <string name="enable_gsm">Enable GSM</string>
+    <string name="disable_gsm">Disable GSM</string>
+
+    <string name="enable_lte_preface">This is only designed for Mio SKU(SC600YEM)</string>
+    <string name="check_result">Check...</string>
+    <string name="enable_lte_bands">Only enable LTE bands(B1,B3,B28)</string>
+</resources>

@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mitac.at"
+    coreApp="true"
+    android:sharedUserId="android.uid.system" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!--uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/!-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="B1B3B28" >
+        <!--activity android:name=".imei"
+            android:label="@string/testing_imei">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity!-->
+        <!--activity android:name=".gsm"
+            android:label="@string/control_gsm">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity!-->
+        <activity android:name=".MainActivity"
+            android:label="@string/enable_lte_bands">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--category android:name="android.intent.category.DEFAULT" /-->
+                <!--category android:name="android.intent.category.LAUNCHER" /-->
+            </intent-filter>
+        </activity>
+        <receiver android:name=".MainReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <!--service android:name=".ATService"
+            android:exported="false"></service!-->
+        <!--service android:name=".at"
+            android:exported="true"></service!-->
+        <!--service android:name=".api"
+            android:exported="true"></service!-->
+        <service android:name=".MainService"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

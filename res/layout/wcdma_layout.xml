@@ -1,0 +1,19 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/label_3g"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_lte_preface" />
+    <TextView
+        android:id="@+id/label_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="200sp"
+        android:layout_below="@+id/label_3g"
+        android:text="@string/check_result" />
+
+</RelativeLayout>
